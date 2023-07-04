@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    background-color: #4682B4;
+    color: #fff;
+    padding: 14px;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2{
+    font-size: 29px;
+}
+
+nav ul, nav a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    padding: 12px;
+    font-size: 19px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+nav button{
+    display: none;
+}
+
+@media screen and (max-width:758px) {
+
+    nav{
+        display: block;
+        padding: 12px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        height: 0;
+    }
+
+    nav li {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav button{
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        color: #000;
+        border: none;
+        font-size: 32px;
+        top: 10px;
+        right: 10px;
+    }
+
+    button:focus~ul{
+        height: 200px;
+        transition: all 0.5s;
+    }
+    
+}
+
+/*FEITO PELO/POR: NICOLAU SARA*/
